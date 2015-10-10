@@ -25,11 +25,27 @@
 
         </android.support.v7.widget.Toolbar>
 
-        <fragment
-            android:name="com.google.android.gms.maps.SupportMapFragment"
+
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+            android:layout_height="match_parent">
+
+            <fragment
+
+                android:id="@+id/ac_main_fragment"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <include layout="@layout/info"/>
+
+        </FrameLayout>
+
+
+
+
+
 
     </android.support.design.widget.AppBarLayout>
 

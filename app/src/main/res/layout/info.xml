@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="bottom"
+
+                android:background="@color/info_background"
+
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity$PlaceholderFragment">
+
+    <TextView
+
+        android:id="@+id/info_anchor_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@android:style/TextAppearance.Holo.Medium"/>
+
+    <TextView
+
+        android:id="@+id/info_coordinate_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@id/info_anchor_text_view"
+
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/info_background"
+        android:textAppearance="@android:style/TextAppearance.Holo.Medium"/>
+
+    <TextView
+
+        android:id="@+id/info_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@id/info_coordinate_text_view"
+
+
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/info_background"
+        android:textAppearance="@android:style/TextAppearance.Holo.Medium"/>
+
+    <TextView
+
+        android:id="@+id/info_country_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@id/info_name_text_view"
+
+
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/info_background"
+        android:textAppearance="@android:style/TextAppearance.Holo.Medium"/>
+
+
+    <RelativeLayout
+
+        android:id="@+id/info_weather_relative_layout"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_above="@id/info_country_text_view"
+        android:background="@color/info_background">
+
+        <ImageView
+            android:id="@+id/info_icon_image_view"
+
+
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/info_main_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/info_icon_image_view"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+        <TextView
+            android:id="@+id/info_description_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/info_main_text_view"
+            android:layout_toRightOf="@+id/info_icon_image_view"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

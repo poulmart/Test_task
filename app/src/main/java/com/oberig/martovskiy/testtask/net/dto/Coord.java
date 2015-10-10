@@ -5,15 +5,15 @@ import com.google.gson.annotations.SerializedName;
 public class Coord {
 
     @SerializedName("lon")
-    private long lon;
+    private double lon;
     @SerializedName("lat")
     private double lat;
 
-    public long getLon() {
+    public double getLon() {
         return lon;
     }
 
-    public void setLon(long lon) {
+    public void setLon(double lon) {
         this.lon = lon;
     }
 
