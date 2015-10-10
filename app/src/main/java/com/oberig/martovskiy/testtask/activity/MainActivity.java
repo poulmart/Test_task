@@ -1,7 +1,6 @@
 package com.oberig.martovskiy.testtask.activity;
 
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -9,7 +8,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.oberig.martovskiy.testtask.R;
-import com.oberig.martovskiy.testtask.adapter.SectionsPagerAdapter;
 import com.oberig.martovskiy.testtask.net.dto.WeatherBody;
 import com.oberig.martovskiy.testtask.net.request.GetWeatherRequest;
 import com.oberig.martovskiy.testtask.service.OpenWeatherMapService;
@@ -19,8 +17,6 @@ import com.octo.android.robospice.request.listener.RequestListener;
 
 public class MainActivity extends AppCompatActivity {
 
-    private SectionsPagerAdapter mSectionsPagerAdapter;
-    private ViewPager mViewPager;
     private final SpiceManager mSpiceManager;
 
     public MainActivity(){
@@ -34,13 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-
-
-        mViewPager = (ViewPager) findViewById(R.id.container);
-        mViewPager.setAdapter(mSectionsPagerAdapter);
-
 
     }
 
